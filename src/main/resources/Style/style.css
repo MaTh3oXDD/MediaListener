@@ -1,0 +1,129 @@
+#loginAnchorPane{
+   -fx-background-color: linear-gradient(to top, #220707 0%, #721817 100%);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat.ttf");
+}
+* {
+    -fx-font-family: "Montserrat";
+-fx-primary-color: #007acc;
+	-fx-secondary-color: #4B6EAF;
+	-fx-grey-color: #b9b9b9;
+
+	-fx-focus-color: -fx-secondary-color;
+}
+.text-field {
+    -fx-background-color: transparent, transparent, transparent;
+    -fx-border-color: transparent transparent -fx-grey-color transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-text-fill: white;
+}
+
+.text-field:focused {
+    -fx-background-color: transparent, transparent, transparent;
+    -fx-border-color: transparent transparent -fx-primary-color transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #42464D, #9DA2AB);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-transition: 0.3s ease-in-out;
+}
+
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #42464D, #9DA2AB);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 8);
+}
+
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #42464D, #9DA2AB);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 6, 0, 0, 3);
+    -fx-padding: 11px 21px 9px 19px;
+}
+
+
+.button:focused {
+    -fx-border-color: #00d2ff;
+    -fx-border-width: 2;
+    -fx-background-color: linear-gradient(to bottom, #42464D, #9DA2AB);
+}
+
+
+.slider {
+    -fx-padding: 10px;
+}
+
+.slider .track {
+    -fx-background-color: linear-gradient(to right, #007acc, #00c9ff);
+    -fx-background-radius: 3;
+    -fx-padding: 0.25em;
+}
+
+.slider .thumb {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 1);
+    -fx-padding: 10px;
+}
+
+.slider .thumb:hover {
+    -fx-background-color: #00c9ff;
+    -fx-cursor: hand;
+}
+
+.slider .thumb:pressed {
+    -fx-background-color: #00a6cc;
+}
+
+.slider .track {
+    -fx-background-radius: 10;
+}
+
+.slider .track:hover {
+    -fx-background-color: linear-gradient(to right, #00bfff, #0084cc);
+}
+
+.progress-bar {
+    -fx-accent: #007acc;
+    -fx-control-inner-background: #e0e0e0;
+    -fx-background-radius: 3;
+    -fx-padding: 5px;
+}
+
+.progress-bar .track {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 3;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #007acc, #00c9ff);
+    -fx-background-radius: 3;
+}
+
+.progress-bar:indeterminate .bar {
+    -fx-background-color: linear-gradient(to right, #00c9ff, #007acc);
+}
+
+.progress-bar:indeterminate .track {
+    -fx-background-color: #e0e0e0;
+}
+
+
